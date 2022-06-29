@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+// Create db connection
 const pg = require('knex')({
   client: 'pg',
   connection: process.env.PG_CONNECTION_STRING,
